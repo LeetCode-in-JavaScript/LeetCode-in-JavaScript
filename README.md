@@ -77,6 +77,7 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0021 |[Merge Two Sorted Lists](src/main/js/g0001_0100/s0021_merge_two_sorted_lists/solution.js)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Linked_List, Recursion, Big_O_Time_O(m+n)_Space_O(m+n) | 0 | 100.00
 
 #### Day 11 Recursion Backtracking
 
@@ -157,6 +158,7 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0017 |[Letter Combinations of a Phone Number](src/main/js/g0001_0100/s0017_letter_combinations_of_a_phone_number/solution.js)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Backtracking, Big_O_Time_O(4^n)_Space_O(n) | 0 | 100.00
+| 0022 |[Generate Parentheses](src/main/js/g0001_0100/s0022_generate_parentheses/solution.js)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming, Backtracking, Big_O_Time_O(2^n)_Space_O(n) | 0 | 100.00
 
 #### Day 12 Dynamic Programming
 
@@ -786,6 +788,7 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0021 |[Merge Two Sorted Lists](src/main/js/g0001_0100/s0021_merge_two_sorted_lists/solution.js)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Linked_List, Recursion, Big_O_Time_O(m+n)_Space_O(m+n) | 0 | 100.00
 
 #### Day 4 Linked List
 
@@ -1005,6 +1008,9 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0024 |[Swap Nodes in Pairs](src/main/js/g0001_0100/s0024_swap_nodes_in_pairs/solution.js)| Medium | Top_100_Liked_Questions, Linked_List, Recursion, Big_O_Time_O(n)_Space_O(1) | 1 | 100.00
+| 0021 |[Merge Two Sorted Lists](src/main/js/g0001_0100/s0021_merge_two_sorted_lists/solution.js)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Linked_List, Recursion, Big_O_Time_O(m+n)_Space_O(m+n) | 0 | 100.00
+| 0025 |[Reverse Nodes in k-Group](src/main/js/g0001_0100/s0025_reverse_nodes_in_k_group/solution.js)| Hard | Top_100_Liked_Questions, Linked_List, Recursion, Big_O_Time_O(n)_Space_O(k) | 0 | 100.00
 
 #### Udemy Tree Stack Queue
 
@@ -1031,6 +1037,7 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0022 |[Generate Parentheses](src/main/js/g0001_0100/s0022_generate_parentheses/solution.js)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming, Backtracking, Big_O_Time_O(2^n)_Space_O(n) | 0 | 100.00
 | 0017 |[Letter Combinations of a Phone Number](src/main/js/g0001_0100/s0017_letter_combinations_of_a_phone_number/solution.js)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Backtracking, Big_O_Time_O(4^n)_Space_O(n) | 0 | 100.00
 
 #### Udemy Bit Manipulation
@@ -1080,6 +1087,7 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0021 |[Merge Two Sorted Lists](src/main/js/g0001_0100/s0021_merge_two_sorted_lists/solution.js)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Linked_List, Recursion, Big_O_Time_O(m+n)_Space_O(m+n) | 0 | 100.00
 
 #### Day 8 Linked List
 
@@ -1181,11 +1189,13 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0024 |[Swap Nodes in Pairs](src/main/js/g0001_0100/s0024_swap_nodes_in_pairs/solution.js)| Medium | Top_100_Liked_Questions, Linked_List, Recursion, Big_O_Time_O(n)_Space_O(1) | 1 | 100.00
 
 #### Day 13 Linked List
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0025 |[Reverse Nodes in k-Group](src/main/js/g0001_0100/s0025_reverse_nodes_in_k_group/solution.js)| Hard | Top_100_Liked_Questions, Linked_List, Recursion, Big_O_Time_O(n)_Space_O(k) | 0 | 100.00
 
 #### Day 14 Stack Queue
 
@@ -1231,6 +1241,11 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 0025 |[Reverse Nodes in k-Group](src/main/js/g0001_0100/s0025_reverse_nodes_in_k_group/solution.js)| Hard | Top_100_Liked_Questions, Linked_List, Recursion, Data_Structure_II_Day_13_Linked_List, Udemy_Linked_List, Big_O_Time_O(n)_Space_O(k) | 0 | 100.00
+| 0024 |[Swap Nodes in Pairs](src/main/js/g0001_0100/s0024_swap_nodes_in_pairs/solution.js)| Medium | Top_100_Liked_Questions, Linked_List, Recursion, Data_Structure_II_Day_12_Linked_List, Udemy_Linked_List, Big_O_Time_O(n)_Space_O(1) | 1 | 100.00
+| 0023 |[Merge k Sorted Lists](src/main/js/g0001_0100/s0023_merge_k_sorted_lists/solution.js)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Heap_Priority_Queue, Linked_List, Divide_and_Conquer, Merge_Sort, Big_O_Time_O(k\*n\*log(k))_Space_O(log(k)) | 3 | 99.39
+| 0022 |[Generate Parentheses](src/main/js/g0001_0100/s0022_generate_parentheses/solution.js)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming, Backtracking, Algorithm_II_Day_11_Recursion_Backtracking, Udemy_Backtracking/Recursion, Big_O_Time_O(2^n)_Space_O(n) | 0 | 100.00
+| 0021 |[Merge Two Sorted Lists](src/main/js/g0001_0100/s0021_merge_two_sorted_lists/solution.js)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Linked_List, Recursion, Data_Structure_I_Day_7_Linked_List, Algorithm_I_Day_10_Recursion_Backtracking, Level_1_Day_3_Linked_List, Udemy_Linked_List, Big_O_Time_O(m+n)_Space_O(m+n) | 0 | 100.00
 | 0020 |[Valid Parentheses](src/main/js/g0001_0100/s0020_valid_parentheses/solution.js)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, String, Stack, Data_Structure_I_Day_9_Stack_Queue, Udemy_Strings, Big_O_Time_O(n)_Space_O(n) | 0 | 100.00
 | 0019 |[Remove Nth Node From End of List](src/main/js/g0001_0100/s0019_remove_nth_node_from_end_of_list/solution.js)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Two_Pointers, Linked_List, Algorithm_I_Day_5_Two_Pointers, Level_2_Day_3_Linked_List, Big_O_Time_O(L)_Space_O(L) | 0 | 100.00
 | 0017 |[Letter Combinations of a Phone Number](src/main/js/g0001_0100/s0017_letter_combinations_of_a_phone_number/solution.js)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Backtracking, Algorithm_II_Day_11_Recursion_Backtracking, Udemy_Backtracking/Recursion, Big_O_Time_O(4^n)_Space_O(n) | 0 | 100.00

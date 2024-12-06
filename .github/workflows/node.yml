@@ -38,6 +38,3 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           SONAR_TOKEN: 3846aa5041adeb0739dbe72dc92e77078e041a0e
-
-      - name: Upload coverage to codecov
-        run: curl -s https://codecov.io/bash | bash

@@ -9,3 +9,7 @@ test('climbStairs', () => {
 test('climbStairs2', () => {
     expect(climbStairs(3)).toEqual(3)
 })
+
+test('climbStairs3', () => {
+    expect(climbStairs(1)).toEqual(1)
+})

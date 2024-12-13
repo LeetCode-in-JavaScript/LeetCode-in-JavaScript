@@ -560,6 +560,7 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0104 |[Maximum Depth of Binary Tree](src/main/js/g0101_0200/s0104_maximum_depth_of_binary_tree/solution.js)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Big_O_Time_O(N)_Space_O(H) | 0 | 100.00
 
 #### Day 11 Containers and Libraries
 
@@ -832,6 +833,7 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0102 |[Binary Tree Level Order Traversal](src/main/js/g0101_0200/s0102_binary_tree_level_order_traversal/solution.js)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Breadth_First_Search, Tree, Binary_Tree, Big_O_Time_O(N)_Space_O(N) | 1 | 87.97
 
 #### Day 7 Binary Search
 
@@ -963,6 +965,7 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0101 |[Symmetric Tree](src/main/js/g0101_0200/s0101_symmetric_tree/solution.js)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree, Big_O_Time_O(N)_Space_O(log(N)) | 0 | 100.00
 
 #### Day 16 Design
 
@@ -1056,6 +1059,7 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0114 |[Flatten Binary Tree to Linked List](src/main/js/g0101_0200/s0114_flatten_binary_tree_to_linked_list/solution.js)| Medium | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Stack, Linked_List, Big_O_Time_O(N)_Space_O(N) | 0 | 100.00
 | 0024 |[Swap Nodes in Pairs](src/main/js/g0001_0100/s0024_swap_nodes_in_pairs/solution.js)| Medium | Top_100_Liked_Questions, Linked_List, Recursion, Big_O_Time_O(n)_Space_O(1) | 1 | 100.00
 | 0021 |[Merge Two Sorted Lists](src/main/js/g0001_0100/s0021_merge_two_sorted_lists/solution.js)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Linked_List, Recursion, Big_O_Time_O(m+n)_Space_O(m+n) | 0 | 100.00
 | 0025 |[Reverse Nodes in k-Group](src/main/js/g0001_0100/s0025_reverse_nodes_in_k_group/solution.js)| Hard | Top_100_Liked_Questions, Linked_List, Recursion, Big_O_Time_O(n)_Space_O(k) | 0 | 100.00
@@ -1065,6 +1069,8 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0094 |[Binary Tree Inorder Traversal](src/main/js/g0001_0100/s0094_binary_tree_inorder_traversal/solution.js)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Stack, Big_O_Time_O(n)_Space_O(n) | 0 | 100.00
+| 0102 |[Binary Tree Level Order Traversal](src/main/js/g0101_0200/s0102_binary_tree_level_order_traversal/solution.js)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Breadth_First_Search, Tree, Binary_Tree, Big_O_Time_O(N)_Space_O(N) | 1 | 87.97
+| 0104 |[Maximum Depth of Binary Tree](src/main/js/g0101_0200/s0104_maximum_depth_of_binary_tree/solution.js)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Big_O_Time_O(N)_Space_O(H) | 0 | 100.00
 | 0098 |[Validate Binary Search Tree](src/main/js/g0001_0100/s0098_validate_binary_search_tree/solution.js)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree, Big_O_Time_O(N)_Space_O(log(N)) | 0 | 100.00
 
 #### Udemy Trie and Heap
@@ -1168,6 +1174,9 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0102 |[Binary Tree Level Order Traversal](src/main/js/g0101_0200/s0102_binary_tree_level_order_traversal/solution.js)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Breadth_First_Search, Tree, Binary_Tree, Big_O_Time_O(N)_Space_O(N) | 1 | 87.97
+| 0104 |[Maximum Depth of Binary Tree](src/main/js/g0101_0200/s0104_maximum_depth_of_binary_tree/solution.js)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Big_O_Time_O(N)_Space_O(H) | 0 | 100.00
+| 0101 |[Symmetric Tree](src/main/js/g0101_0200/s0101_symmetric_tree/solution.js)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree, Big_O_Time_O(N)_Space_O(log(N)) | 0 | 100.00
 
 #### Day 12 Tree
 
@@ -1270,6 +1279,7 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0105 |[Construct Binary Tree from Preorder and Inorder Traversal](src/main/js/g0101_0200/s0105_construct_binary_tree_from_preorder_and_inorder_traversal/solution.js)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Tree, Binary_Tree, Divide_and_Conquer, Big_O_Time_O(N)_Space_O(N) | 1 | 98.60
 
 #### Day 16 Tree
 
@@ -1305,6 +1315,11 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 0114 |[Flatten Binary Tree to Linked List](src/main/js/g0101_0200/s0114_flatten_binary_tree_to_linked_list/solution.js)| Medium | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Stack, Linked_List, Udemy_Linked_List, Big_O_Time_O(N)_Space_O(N) | 0 | 100.00
+| 0105 |[Construct Binary Tree from Preorder and Inorder Traversal](src/main/js/g0101_0200/s0105_construct_binary_tree_from_preorder_and_inorder_traversal/solution.js)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Hash_Table, Tree, Binary_Tree, Divide_and_Conquer, Data_Structure_II_Day_15_Tree, Big_O_Time_O(N)_Space_O(N) | 1 | 98.60
+| 0104 |[Maximum Depth of Binary Tree](src/main/js/g0101_0200/s0104_maximum_depth_of_binary_tree/solution.js)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Data_Structure_I_Day_11_Tree, Programming_Skills_I_Day_10_Linked_List_and_Tree, Udemy_Tree_Stack_Queue, Big_O_Time_O(N)_Space_O(H) | 0 | 100.00
+| 0102 |[Binary Tree Level Order Traversal](src/main/js/g0101_0200/s0102_binary_tree_level_order_traversal/solution.js)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Breadth_First_Search, Tree, Binary_Tree, Data_Structure_I_Day_11_Tree, Level_1_Day_6_Tree, Udemy_Tree_Stack_Queue, Big_O_Time_O(N)_Space_O(N) | 1 | 87.97
+| 0101 |[Symmetric Tree](src/main/js/g0101_0200/s0101_symmetric_tree/solution.js)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree, Data_Structure_I_Day_14_Tree, Level_1_Day_8_Binary_Search_Tree, Udemy_Tree_Stack_Queue, Big_O_Time_O(N)_Space_O(log(N)) | 0 | 100.00
 | 0098 |[Validate Binary Search Tree](src/main/js/g0001_0100/s0098_validate_binary_search_tree/solution.js)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Binary_Search_Tree, Data_Structure_I_Day_14_Tree, Level_1_Day_8_Binary_Search_Tree, Udemy_Tree_Stack_Queue, Big_O_Time_O(N)_Space_O(log(N)) | 0 | 100.00
 | 0096 |[Unique Binary Search Trees](src/main/js/g0001_0100/s0096_unique_binary_search_trees/solution.js)| Medium | Dynamic_Programming, Math, Tree, Binary_Tree, Binary_Search_Tree, Dynamic_Programming_I_Day_11, Big_O_Time_O(n)_Space_O(1) | 0 | 100.00
 | 0094 |[Binary Tree Inorder Traversal](src/main/js/g0001_0100/s0094_binary_tree_inorder_traversal/solution.js)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Stack, Data_Structure_I_Day_10_Tree, Udemy_Tree_Stack_Queue, Big_O_Time_O(n)_Space_O(n) | 0 | 100.00

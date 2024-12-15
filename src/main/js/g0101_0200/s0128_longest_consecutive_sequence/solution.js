@@ -9,11 +9,9 @@ var longestConsecutive = function(nums) {
     if (nums.length === 0) {
         return 0
     }
-
-    nums.sort((a, b) => a - b) // Sort the array in ascending order
+    nums.sort((a, b) => a - b)
     let max = Number.MIN_SAFE_INTEGER
     let thsMax = 1
-
     for (let i = 0; i < nums.length - 1; i++) {
         if (nums[i + 1] === nums[i] + 1) {
             thsMax += 1
@@ -22,11 +20,9 @@ var longestConsecutive = function(nums) {
         if (nums[i + 1] === nums[i]) {
             continue
         }
-        // Start of a new sequence
         max = Math.max(max, thsMax)
-        thsMax = 1
+        thsMax = 1 // NOSONAR
     }
-
     return Math.max(max, thsMax)
 };
 

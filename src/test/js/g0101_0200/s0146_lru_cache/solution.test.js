@@ -2,7 +2,7 @@
 import { LRUCache } from 'src/main/js/g0101_0200/s0146_lru_cache/solution'
 import { expect, test } from 'vitest'
 
-test('lRUCache', () => {
+test('lruCache', () => {
     const lRUCache = new LRUCache(2)
     lRUCache.put(1, 1)
     lRUCache.put(2, 2)

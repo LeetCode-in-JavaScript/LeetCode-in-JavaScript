@@ -5,8 +5,8 @@
 /**
  * Definition for singly-linked list.
  * function ListNode(val) {
- *     this.val = val;
- *     this.next = null;
+ *     this.val = val
+ *     this.next = null
  * }
  */
 
@@ -16,33 +16,33 @@
  */
 var detectCycle = function(head) {
     if (head === null || head.next === null) {
-        return null;
+        return null
     }
 
-    let slow = head;
-    let fast = head;
+    let slow = head
+    let fast = head
 
     while (fast !== null && fast.next !== null) {
-        fast = fast.next.next;
-        slow = slow.next;
+        fast = fast.next.next
+        slow = slow.next
 
         // If slow and fast pointers meet, cycle is detected.
         if (slow === fast) {
-            break;
+            break
         }
     }
 
     if (fast === null || fast.next === null) {
-        return null;
+        return null
     }
 
-    slow = head;
+    slow = head
     while (slow !== fast) {
-        slow = slow.next;
-        fast = fast.next;
+        slow = slow.next
+        fast = fast.next
     }
 
-    return slow;
+    return slow
 };
 
 export { detectCycle }

@@ -9,30 +9,30 @@
  * @return {boolean}
  */
 var wordBreak = function(s, wordDict) {
-    const memo = new Array(s.length + 1).fill(null);
+    const memo = new Array(s.length + 1).fill(null)
 
     const dp = (i) => {
         if (i === s.length) {
-            return true;
+            return true
         }
         if (memo[i] !== null) {
-            return memo[i];
+            return memo[i]
         }
         for (const word of wordDict) {
-            const len = word.length;
+            const len = word.length
             if (i + len > s.length || s.substring(i, i + len) !== word) {
-                continue;
+                continue
             }
             if (dp(i + len)) {
-                memo[i] = true;
-                return true;
+                memo[i] = true
+                return true
             }
         }
-        memo[i] = false;
-        return false;
-    };
+        memo[i] = false
+        return false
+    }
 
-    return dp(0);
+    return dp(0)
 };
 
 export { wordBreak }

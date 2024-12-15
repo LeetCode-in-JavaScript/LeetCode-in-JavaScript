@@ -7,11 +7,11 @@
  * @return {number}
  */
 var singleNumber = function(nums) {
-    let res = 0;
+    let res = 0
     for (const num of nums) {
-        res ^= num; // XOR operation
+        res ^= num // XOR operation
     }
-    return res;
+    return res
 };
 
 export { singleNumber }

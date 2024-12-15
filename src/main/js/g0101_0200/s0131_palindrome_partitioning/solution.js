@@ -7,33 +7,33 @@
  * @return {string[][]}
  */
 var partition = function(s) {
-    const res = [];
-    backtracking(res, [], s, 0);
-    return res;
+    const res = []
+    backtracking(res, [], s, 0)
+    return res
 };
 
 const backtracking = (res, currArr, s, start) => {
     if (start === s.length) {
-        res.push([...currArr]); // Add a copy of the current array to the result
-        return;
+        res.push([...currArr]) // Add a copy of the current array to the result
+        return
     }
 
     for (let end = start; end < s.length; end++) {
         if (!isPalindrome(s, start, end)) {
-            continue;
+            continue
         }
-        currArr.push(s.substring(start, end + 1)); // Add the current substring
-        backtracking(res, currArr, s, end + 1); // Recurse to the next part
-        currArr.pop(); // Remove the last element to backtrack
+        currArr.push(s.substring(start, end + 1)) // Add the current substring
+        backtracking(res, currArr, s, end + 1) // Recurse to the next part
+        currArr.pop() // Remove the last element to backtrack
     }
 };
 
 const isPalindrome = (s, start, end) => {
     while (start < end && s[start] === s[end]) {
-        start++;
-        end--;
+        start++
+        end--
     }
-    return start >= end;
+    return start >= end
 };
 
 export { partition }

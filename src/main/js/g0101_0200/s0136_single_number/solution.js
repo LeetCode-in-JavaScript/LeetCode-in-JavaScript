@@ -9,7 +9,7 @@
 var singleNumber = function(nums) {
     let res = 0
     for (const num of nums) {
-        res ^= num // XOR operation
+        res ^= num
     }
     return res
 };

@@ -14,12 +14,10 @@ var majorityElement = function(arr) {
     for (let i = 1; i < arr.length; i++) {
         if (arr[i] === majority) {
             count++;
+        } else if (count > 1) {
+            count--;
         } else {
-            if (count > 1) {
-                count--;
-            } else {
-                majority = arr[i];
-            }
+            majority = arr[i];
         }
     }
 

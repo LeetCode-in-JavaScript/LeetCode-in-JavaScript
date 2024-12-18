@@ -11,8 +11,8 @@ var findKthLargest = function(nums, k) {
     const min = Math.min(...nums)
     const max = Math.max(...nums)
     const dp = new Array(max - min + 1).fill(0)
-    for (let i = 0; i < nums.length; i++) {
-        dp[nums[i]-min]++
+    for (let num of nums) {
+        dp[num-min]++
     }
     for (let i = dp.length-1; i >= 0; i--) {
         k -= dp[i]

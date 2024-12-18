@@ -7,8 +7,8 @@
  * @return {number}
  */
 var majorityElement = function(arr) {
-    let count = 1;
-    let majority = arr[0];
+    let count = 1
+    let majority = arr[0]
 
     // For Potential Majority Element
     for (let i = 1; i < arr.length; i++) {
@@ -22,17 +22,17 @@ var majorityElement = function(arr) {
     }
 
     // For Confirmation
-    count = 0;
+    count = 0
     for (const num of arr) {
         if (num === majority) {
-            count++;
+            count++
         }
     }
 
     if (count >= Math.floor(arr.length / 2) + 1) {
-        return majority;
+        return majority
     } else {
-        return -1;
+        return -1
     }
 };
 

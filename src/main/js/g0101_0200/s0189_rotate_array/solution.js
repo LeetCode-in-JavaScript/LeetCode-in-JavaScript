@@ -9,20 +9,20 @@
  */
 var reverse = function(nums, l, r) {
     while (l <= r) {
-        let temp = nums[l];
-        nums[l] = nums[r];
-        nums[r] = temp;
-        l++;
-        r--;
+        let temp = nums[l]
+        nums[l] = nums[r]
+        nums[r] = temp
+        l++
+        r--
     }
 };
 
 const rotate = function(nums, k) {
-    const n = nums.length;
-    const t = n - (k % n);
-    reverse(nums, 0, t - 1);
-    reverse(nums, t, n - 1);
-    reverse(nums, 0, n - 1);
+    const n = nums.length
+    const t = n - (k % n)
+    reverse(nums, 0, t - 1)
+    reverse(nums, t, n - 1)
+    reverse(nums, 0, n - 1)
 };
 
 export { rotate }

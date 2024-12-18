@@ -9,21 +9,21 @@
  * @return {number}
  */
 var numIslands = function(grid) {
-    let islands = 0;
+    let islands = 0
 
     if (grid && grid.length > 0 && grid[0].length > 0) {
         for (let i = 0; i < grid.length; i++) {
             for (let j = 0; j < grid[0].length; j++) {
                 if (grid[i][j] === '1') {
-                    dfs(grid, i, j);
-                    islands++;
+                    dfs(grid, i, j)
+                    islands++
                 }
             }
         }
     }
 
-    return islands;
-}
+    return islands
+};
 
 const dfs = function(grid, x, y) {
     if (
@@ -33,15 +33,15 @@ const dfs = function(grid, x, y) {
         y >= grid[0].length ||
         grid[x][y] !== '1'
     ) {
-        return;
+        return
     }
 
-    grid[x][y] = 'x'; // Mark as visited
+    grid[x][y] = 'x' // Mark as visited
 
-    dfs(grid, x + 1, y); // Down
-    dfs(grid, x - 1, y); // Up
-    dfs(grid, x, y + 1); // Right
-    dfs(grid, x, y - 1); // Left
-}
+    dfs(grid, x + 1, y) // Down
+    dfs(grid, x - 1, y) // Up
+    dfs(grid, x, y + 1) // Right
+    dfs(grid, x, y - 1) // Left
+};
 
 export { numIslands }

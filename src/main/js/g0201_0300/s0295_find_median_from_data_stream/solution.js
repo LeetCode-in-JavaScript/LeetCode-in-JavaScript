@@ -1,237 +1,273 @@
 // #Hard #Top_100_Liked_Questions #Sorting #Two_Pointers #Design #Heap_Priority_Queue #Data_Stream
-// #Big_O_Time_O(n*log_n)_Space_O(n) #2024_12_21_Time_97_ms_(98.11%)_Space_80.5_MB_(91.58%)
+// #Big_O_Time_O(n*log_n)_Space_O(n) #2024_12_21_Time_97_ms_(98.11%)_Space_81.4_MB_(85.26%)
 
-// MedianFinder class using two heaps (min heap and max heap)
-var MedianFinder = function () {
-    // Min heap for the second half of sorted numbers
-    this.minHeap = new MinHeap()
-    // Max heap for the first half of sorted numbers
-    this.maxHeap = new MaxHeap()
+var MedianFinder = function() {
+    this.minHeap = [] // for storing second half of sorted numbers
+    this.maxHeap = [] // for storing first half of sorted numbers
 };
 
 /** 
  * @param {number} num
  * @return {void}
  */
-MedianFinder.prototype.addNum = function (num) {
-    // If maxHeap is empty or the number is less than or equal to the maxHeap's root
-    if (this.maxHeap.isEmpty() || num <= this.maxHeap.peek()) {
-        this.maxHeap.push(num) // Add to maxHeap
-    } else {
-        this.minHeap.push(num) // Add to minHeap
+MedianFinder.prototype.addNum = function(num) {
+    if(this.maxHeap.length == 0) {
+      this.maxHeap.push(num)
+      return
     }
 
-    // Balance the heaps
-    if (this.maxHeap.size() > this.minHeap.size() + 1) {
-        this.minHeap.push(this.maxHeap.pop())
-    } else if (this.minHeap.size() > this.maxHeap.size()) {
-        this.maxHeap.push(this.minHeap.pop())
+    if(this.minHeap.length == 0) {
+      if(this.maxHeap[0] > num) {
+        this.minHeap.push(this.maxHeap[0])
+        this.maxHeap[0] = num
+      } else {
+        this.minHeap.push(num)
+      }
+
+      return
+    }
+
+    if(this.maxHeap[0] < num) { // add to min heap
+      this.minHeap.push(num)
+
+      let idx = this.minHeap.length - 1
+      let parent = Math.floor(idx / 2)
+      let heap = this.minHeap
+
+      while(parent >= 0 && heap[parent] > heap[idx]) {
+        let swap = heap[parent]
+        heap[parent] = heap[idx]
+        heap[idx] = swap
+
+        idx = parent
+        parent = Math.floor(idx / 2)
+      }
+    } else { // add to max heap
+      this.maxHeap.push(num)
+
+      let idx = this.maxHeap.length - 1
+      let parent = Math.floor(idx / 2)
+      let heap = this.maxHeap
+
+      while(parent >= 0 && heap[parent] < heap[idx]) {
+        let swap = heap[parent]
+        heap[parent] = heap[idx]
+        heap[idx] = swap
+
+        idx = parent
+        parent = Math.floor(idx / 2)
+      }
+    }
+
+    const maxHeapLength = this.maxHeap.length
+    const minHeapLength = this.minHeap.length
+
+    const isEven = (maxHeapLength + minHeapLength) % 2
+    if(maxHeapLength < minHeapLength) {
+      if(isEven == 0) {
+        while(this.maxHeap.length != this.minHeap.length) {
+          // pick root from min, and add it to max
+          let minRoot = this.minHeap[0]
+          
+          // heapify min heap
+          this.minHeap[0] = this.minHeap[this.minHeap.length - 1]
+          this.minHeap.pop()
+
+          let idx = 0
+          let l = 2 * idx
+          let r = 2 * idx + 1
+          let heap = this.minHeap
+
+          while(idx < heap.length && l < heap.length && (
+            heap[l] < heap[idx]
+            || heap[r] < heap[idx]
+          )) {
+            let min = l
+            if(heap[r] <  heap[l])
+              min = r
+
+            let swap = heap[idx]
+            heap[idx] = heap[min]
+            heap[min] = swap
+
+            idx = min
+            l = 2 * idx
+            r = 2 * idx + 1
+          }
+
+          // add min root to max heap
+          this.maxHeap.push(minRoot)
+
+          idx = this.maxHeap.length - 1
+          let parent = Math.floor(idx / 2)
+          heap = this.maxHeap
+          while(parent >= 0 && heap[parent] < heap[idx]) {
+            let swap = heap[parent]
+            heap[parent] = heap[idx]
+            heap[idx] = swap
+
+            idx = parent
+            parent = Math.floor(idx / 2)
+          }
+        }
+      } else {
+        while(this.maxHeap.length <= this.minHeap.length) {
+          // pick root from min, and add it to max
+          let minRoot = this.minHeap[0]
+          
+          // heapify min heap
+          this.minHeap[0] = this.minHeap[this.minHeap.length - 1]
+          this.minHeap.pop()
+
+          let idx = 0
+          let l = 2 * idx
+          let r = 2 * idx + 1
+          let heap = this.minHeap
+
+          while(idx < heap.length && l < heap.length && (
+            heap[l] < heap[idx]
+            || heap[r] < heap[idx]
+          )) {
+            let min = l
+            if(heap[r] <  heap[l])
+              min = r
+
+            let swap = heap[idx]
+            heap[idx] = heap[min]
+            heap[min] = swap
+
+            idx = min
+            l = 2 * idx
+            r = 2 * idx + 1
+          }
+
+          // add min root to max heap
+          this.maxHeap.push(minRoot)
+
+          idx = this.maxHeap.length - 1
+          let parent = Math.floor(idx / 2)
+          heap = this.maxHeap
+          while(parent >= 0 && heap[parent] < heap[idx]) {
+            let swap = heap[parent]
+            heap[parent] = heap[idx]
+            heap[idx] = swap
+
+            idx = parent
+            parent = Math.floor(idx / 2)
+          }
+        }
+      }
+    } else if(maxHeapLength - minHeapLength > 1) {
+      if(isEven == 0) {
+        while(this.maxHeap.length != this.minHeap.length) {
+          // pick root from max, and add it to min
+          let maxRoot = this.maxHeap[0]
+          
+          // heapify min heap
+          this.maxHeap[0] = this.maxHeap[this.maxHeap.length - 1]
+          this.maxHeap.pop()
+
+          let idx = 0
+          let l = 2 * idx
+          let r = 2 * idx + 1
+          let heap = this.maxHeap
+
+          while(idx < heap.length && l < heap.length && (
+            heap[l] > heap[idx]
+            || heap[r] > heap[idx]
+          )) {
+            let max = l
+            if(heap[r] > heap[l])
+              max = r
+
+            let swap = heap[idx]
+            heap[idx] = heap[max]
+            heap[max] = swap
+
+            idx = max
+            l = 2 * idx
+            r = 2 * idx + 1
+          }
+
+          // add max root to min heap
+          this.minHeap.push(maxRoot)
+
+          idx = this.minHeap.length - 1
+          let parent = Math.floor(idx / 2)
+          heap = this.minHeap
+          while(parent >= 0 && heap[parent] > heap[idx]) {
+            let swap = heap[parent]
+            heap[parent] = heap[idx]
+            heap[idx] = swap
+
+            idx = parent
+            parent = Math.floor(idx / 2)
+          }
+        }
+      } else {
+        while(this.maxHeap.length - this.minHeap.length > 1) {
+          // pick root from max, and add it to min
+          let maxRoot = this.maxHeap[0]
+          
+          // heapify min heap
+          this.maxHeap[0] = this.maxHeap[this.maxHeap.length - 1]
+          this.maxHeap.pop()
+
+          let idx = 0
+          let l = 2 * idx
+          let r = 2 * idx + 1
+          let heap = this.maxHeap
+
+          while(idx < heap.length && l < heap.length && (
+            heap[l] > heap[idx]
+            || heap[r] > heap[idx]
+          )) {
+            let max = l
+            if(heap[r] > heap[l])
+              max = r
+
+            let swap = heap[idx]
+            heap[idx] = heap[max]
+            heap[max] = swap
+
+            idx = max
+            l = 2 * idx
+            r = 2 * idx + 1
+          }
+
+          // add max root to min heap
+          this.minHeap.push(minRoot)
+
+          idx = this.minHeap.length - 1
+          let parent = Math.floor(idx / 2)
+          heap = this.minHeap
+          while(parent >= 0 && heap[parent] > heap[idx]) {
+            let swap = heap[parent]
+            heap[parent] = heap[idx]
+            heap[idx] = swap
+
+            idx = parent
+            parent = Math.floor(idx / 2)
+          }
+        }
+      }
     }
 };
 
 /**
  * @return {number}
  */
-MedianFinder.prototype.findMedian = function () {
-    // If maxHeap is empty, return null
-    if (this.maxHeap.isEmpty()) {
-        return null
+MedianFinder.prototype.findMedian = function() {
+    const maxHeapLength = this.maxHeap.length
+    const minHeapLength = this.minHeap.length
+
+    const isEven = (maxHeapLength + minHeapLength) % 2
+
+    if(isEven == 0) {
+      return (this.minHeap[0] + this.maxHeap[0]) / 2
     }
 
-    // Determine if the total number of elements is even or odd
-    if (this.maxHeap.size() === this.minHeap.size()) {
-        // If even, return the average of maxHeap's root and minHeap's root
-        return (this.maxHeap.peek() + this.minHeap.peek()) / 2
-    }
-    // If odd, return the root of maxHeap
-    return this.maxHeap.peek()
+    return this.maxHeap[0]
 };
-
-// MinHeap class for a min-heap data structure
-class MinHeap {
-    constructor() {
-        this.heap = []
-    }
-
-    // Add a value to the min heap
-    push(value) {
-        this.heap.push(value)
-        this.heapifyUp()
-    }
-
-    // Remove and return the smallest value from the min heap
-    pop() {
-        if (this.isEmpty()) {
-            return null
-        }
-
-        const root = this.heap[0]
-        const last = this.heap.pop()
-
-        if (this.size() > 0) {
-            this.heap[0] = last
-            this.heapifyDown()
-        }
-
-        return root
-    }
-
-    // Return the smallest value without removing it from the heap
-    peek() {
-        return this.isEmpty() ? null : this.heap[0]
-    }
-
-    // Return the size of the min heap
-    size() {
-        return this.heap.length
-    }
-
-    // Check if the min heap is empty
-    isEmpty() {
-        return this.size() === 0
-    }
-
-    // Restore the heap property by moving a newly added element to its correct position
-    heapifyUp() {
-        let index = this.size() - 1
-        while (index > 0) {
-            const parentIndex = Math.floor((index - 1) / 2)
-            if (this.heap[parentIndex] > this.heap[index]) {
-                this.swap(index, parentIndex)
-                index = parentIndex
-            } else {
-                break
-            }
-        }
-    }
-
-    // Restore the heap property by moving the root down to its correct position
-    heapifyDown() {
-        let index = 0
-        const length = this.size()
-        while (true) {
-            const leftChild = 2 * index + 1
-            const rightChild = 2 * index + 2
-            let smallest = index
-
-            if (leftChild < length && this.heap[leftChild] < this.heap[smallest]) {
-                smallest = leftChild
-            }
-
-            if (rightChild < length && this.heap[rightChild] < this.heap[smallest]) {
-                smallest = rightChild
-            }
-
-            if (smallest !== index) {
-                this.swap(index, smallest)
-                index = smallest
-            } else {
-                break
-            }
-        }
-    }
-
-    // Swap two elements in the heap
-    swap(i, j) {
-        [this.heap[i], this.heap[j]] = [this.heap[j], this.heap[i]]
-    }
-};
-
-// MaxHeap class for a max-heap data structure
-class MaxHeap {
-    constructor() {
-        this.heap = []
-    }
-
-    // Add a value to the max heap
-    push(value) {
-        this.heap.push(value)
-        this.heapifyUp()
-    }
-
-    // Remove and return the largest value from the max heap
-    pop() {
-        if (this.isEmpty()) {
-            return null
-        }
-
-        const root = this.heap[0]
-        const last = this.heap.pop()
-
-        if (this.size() > 0) {
-            this.heap[0] = last
-            this.heapifyDown()
-        }
-
-        return root
-    }
-
-    // Return the largest value without removing it from the heap
-    peek() {
-        return this.isEmpty() ? null : this.heap[0]
-    }
-
-    // Return the size of the max heap
-    size() {
-        return this.heap.length
-    }
-
-    // Check if the max heap is empty
-    isEmpty() {
-        return this.size() === 0
-    }
-
-    // Restore the heap property by moving a newly added element to its correct position
-    heapifyUp() {
-        let index = this.size() - 1
-        while (index > 0) {
-            const parentIndex = Math.floor((index - 1) / 2)
-            if (this.heap[parentIndex] < this.heap[index]) {
-                this.swap(index, parentIndex)
-                index = parentIndex
-            } else {
-                break
-            }
-        }
-    }
-
-    // Restore the heap property by moving the root down to its correct position
-    heapifyDown() {
-        let index = 0
-        const length = this.size()
-        while (true) {
-            const leftChild = 2 * index + 1
-            const rightChild = 2 * index + 2
-            let largest = index
-
-            if (leftChild < length && this.heap[leftChild] > this.heap[largest]) {
-                largest = leftChild
-            }
-
-            if (rightChild < length && this.heap[rightChild] > this.heap[largest]) {
-                largest = rightChild
-            }
-
-            if (largest !== index) {
-                this.swap(index, largest)
-                index = largest
-            } else {
-                break
-            }
-        }
-    }
-
-    // Swap two elements in the heap
-    swap(i, j) {
-        [this.heap[i], this.heap[j]] = [this.heap[j], this.heap[i]]
-    }
-};
-
-/** 
- * Your MedianFinder object will be instantiated and called as such:
- * var obj = new MedianFinder()
- * obj.addNum(num)
- * var param_2 = obj.findMedian()
- */
 
 export { MedianFinder }

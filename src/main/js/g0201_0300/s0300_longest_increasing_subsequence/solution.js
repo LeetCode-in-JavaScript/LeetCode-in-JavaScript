@@ -14,7 +14,11 @@ var lengthOfLIS = function (nums) {
         let end = dp.length
         while (start < end) {
             const mid = Math.floor((start + end) / 2)
-            dp[mid] < num ? start = mid + 1 : end = mid
+            if (dp[mid] < num) {
+                start = mid + 1
+            } else {
+                end = mid
+            }
         }
         dp[start] = num
     }

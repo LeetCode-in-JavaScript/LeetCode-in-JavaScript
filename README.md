@@ -217,6 +217,7 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0072 |[Edit Distance](src/main/js/g0001_0100/s0072_edit_distance/solution.js)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Big_O_Time_O(n^2)_Space_O(n2) | 5 | 99.01
+| 0322 |[Coin Change](src/main/js/g0301_0400/s0322_coin_change/solution.js)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Breadth_First_Search, Big_O_Time_O(m\*n)_Space_O(amount) | 26 | 95.33
 
 #### Day 19 Bit Manipulation
 
@@ -522,6 +523,7 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0322 |[Coin Change](src/main/js/g0301_0400/s0322_coin_change/solution.js)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Breadth_First_Search, Big_O_Time_O(m\*n)_Space_O(amount) | 26 | 95.33
 
 #### Day 21
 
@@ -905,6 +907,7 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0394 |[Decode String](src/main/js/g0301_0400/s0394_decode_string/solution.js)| Medium | Top_100_Liked_Questions, String, Stack, Recursion, Big_O_Time_O(n)_Space_O(n) | 0 | 100.00
 
 #### Day 15 Heap
 
@@ -951,6 +954,7 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0437 |[Path Sum III](src/main/js/g0401_0500/s0437_path_sum_iii/solution.js)| Medium | Depth_First_Search, Tree, Binary_Tree, Big_O_Time_O(n)_Space_O(n) | 2 | 97.05
 
 #### Day 8 Binary Search
 
@@ -980,11 +984,13 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0198 |[House Robber](src/main/js/g0101_0200/s0198_house_robber/solution.js)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Big_O_Time_O(n)_Space_O(n) | 0 | 100.00
+| 0322 |[Coin Change](src/main/js/g0301_0400/s0322_coin_change/solution.js)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Breadth_First_Search, Big_O_Time_O(m\*n)_Space_O(amount) | 26 | 95.33
 
 #### Day 13 Dynamic Programming
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0416 |[Partition Equal Subset Sum](src/main/js/g0401_0500/s0416_partition_equal_subset_sum/solution.js)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Big_O_Time_O(n\*sums)_Space_O(n\*sums) | 18 | 97.98
 | 0152 |[Maximum Product Subarray](src/main/js/g0101_0200/s0152_maximum_product_subarray/solution.js)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Dynamic_Programming, Big_O_Time_O(N)_Space_O(1) | 0 | 100.00
 
 #### Day 14 Sliding Window/Two Pointer
@@ -1047,6 +1053,7 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 | 0003 |[Longest Substring Without Repeating Characters](src/main/js/g0001_0100/s0003_longest_substring_without_repeating_characters/solution.js)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Hash_Table, Sliding_Window, Big_O_Time_O(n)_Space_O(1), AI_can_be_used_to_solve_the_task | 3 | 98.96
 | 0020 |[Valid Parentheses](src/main/js/g0001_0100/s0020_valid_parentheses/solution.js)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, String, Stack, Big_O_Time_O(n)_Space_O(n) | 0 | 100.00
 | 0005 |[Longest Palindromic Substring](src/main/js/g0001_0100/s0005_longest_palindromic_substring/solution.js)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, String, Dynamic_Programming, Big_O_Time_O(n)_Space_O(n) | 10 | 99.54
+| 0394 |[Decode String](src/main/js/g0301_0400/s0394_decode_string/solution.js)| Medium | Top_100_Liked_Questions, String, Stack, Recursion, Big_O_Time_O(n)_Space_O(n) | 0 | 100.00
 | 0049 |[Group Anagrams](src/main/js/g0001_0100/s0049_group_anagrams/solution.js)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, String, Hash_Table, Sorting, Big_O_Time_O(n\*k_log_k)_Space_O(n) | 24 | 91.62
 
 #### Udemy Binary Search
@@ -1165,6 +1172,7 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0338 |[Counting Bits](src/main/js/g0301_0400/s0338_counting_bits/solution.js)| Easy | Dynamic_Programming, Bit_Manipulation, Big_O_Time_O(num)_Space_O(num) | 0 | 100.00
 
 #### Udemy Design
 
@@ -1379,6 +1387,7 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0215 |[Kth Largest Element in an Array](src/main/js/g0201_0300/s0215_kth_largest_element_in_an_array/solution.js)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Array, Sorting, Heap_Priority_Queue, Divide_and_Conquer, Quickselect, Big_O_Time_O(n\*log(n))_Space_O(log(n)) | 9 | 97.67
+| 0347 |[Top K Frequent Elements](src/main/js/g0301_0400/s0347_top_k_frequent_elements/solution.js)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Sorting, Heap_Priority_Queue, Counting, Divide_and_Conquer, Quickselect, Bucket_Sort, Big_O_Time_O(n\*log(n))_Space_O(k) | 6 | 95.00
 
 #### Day 21 Heap Priority Queue
 
@@ -1389,8 +1398,14 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 0437 |[Path Sum III](src/main/js/g0401_0500/s0437_path_sum_iii/solution.js)| Medium | Depth_First_Search, Tree, Binary_Tree, Level_2_Day_7_Tree, Big_O_Time_O(n)_Space_O(n) | 2 | 97.05
+| 0416 |[Partition Equal Subset Sum](src/main/js/g0401_0500/s0416_partition_equal_subset_sum/solution.js)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Level_2_Day_13_Dynamic_Programming, Big_O_Time_O(n\*sums)_Space_O(n\*sums) | 18 | 97.98
+| 0394 |[Decode String](src/main/js/g0301_0400/s0394_decode_string/solution.js)| Medium | Top_100_Liked_Questions, String, Stack, Recursion, Level_1_Day_14_Stack, Udemy_Strings, Big_O_Time_O(n)_Space_O(n) | 0 | 100.00
+| 0347 |[Top K Frequent Elements](src/main/js/g0301_0400/s0347_top_k_frequent_elements/solution.js)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Sorting, Heap_Priority_Queue, Counting, Divide_and_Conquer, Quickselect, Bucket_Sort, Data_Structure_II_Day_20_Heap_Priority_Queue, Big_O_Time_O(n\*log(n))_Space_O(k) | 6 | 95.00
+| 0338 |[Counting Bits](src/main/js/g0301_0400/s0338_counting_bits/solution.js)| Easy | Dynamic_Programming, Bit_Manipulation, Udemy_Bit_Manipulation, Big_O_Time_O(num)_Space_O(num) | 0 | 100.00
+| 0322 |[Coin Change](src/main/js/g0301_0400/s0322_coin_change/solution.js)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Breadth_First_Search, Algorithm_II_Day_18_Dynamic_Programming, Dynamic_Programming_I_Day_20, Level_2_Day_12_Dynamic_Programming, Big_O_Time_O(m\*n)_Space_O(amount) | 26 | 95.33
 | 0300 |[Longest Increasing Subsequence](src/main/js/g0201_0300/s0300_longest_increasing_subsequence/solution.js)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Binary_Search, Algorithm_II_Day_16_Dynamic_Programming, Binary_Search_II_Day_3, Dynamic_Programming_I_Day_18, Udemy_Dynamic_Programming, Big_O_Time_O(n\*log_n)_Space_O(n) | 4 | 93.09
-| 0295 |[Find Median from Data Stream](src/main/js/g0201_0300/s0295_find_median_from_data_stream/solution.js)| Hard | Top_100_Liked_Questions, Sorting, Two_Pointers, Design, Heap_Priority_Queue, Data_Stream, Big_O_Time_O(n\*log_n)_Space_O(n) | 97 | 98.11
+| 0295 |[Find Median from Data Stream](src/main/js/g0201_0300/s0295_find_median_from_data_stream/solution.js)| Hard | Top_100_Liked_Questions, Sorting, Two_Pointers, Design, Heap_Priority_Queue, Data_Stream, Big_O_Time_O(n\*log_n)_Space_O(n) | 134 | 76.00
 | 0287 |[Find the Duplicate Number](src/main/js/g0201_0300/s0287_find_the_duplicate_number/solution.js)| Medium | Top_100_Liked_Questions, Array, Binary_Search, Two_Pointers, Bit_Manipulation, Binary_Search_II_Day_5, Big_O_Time_O(n)_Space_O(n) | 1 | 99.54
 | 0283 |[Move Zeroes](src/main/js/g0201_0300/s0283_move_zeroes/solution.js)| Easy | Top_100_Liked_Questions, Array, Two_Pointers, Algorithm_I_Day_3_Two_Pointers, Programming_Skills_I_Day_6_Array, Udemy_Arrays, Big_O_Time_O(n)_Space_O(1) | 0 | 100.00
 | 0240 |[Search a 2D Matrix II](src/main/js/g0201_0300/s0240_search_a_2d_matrix_ii/solution.js)| Medium | Top_100_Liked_Questions, Array, Binary_Search, Matrix, Divide_and_Conquer, Data_Structure_II_Day_4_Array, Binary_Search_II_Day_8, Big_O_Time_O(n+m)_Space_O(1) | 279 | 94.52

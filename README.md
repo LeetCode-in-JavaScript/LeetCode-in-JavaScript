@@ -139,6 +139,7 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0438 |[Find All Anagrams in a String](src/main/js/g0401_0500/s0438_find_all_anagrams_in_a_string/solution.js)| Medium | Top_100_Liked_Questions, String, Hash_Table, Sliding_Window, Big_O_Time_O(n+m)_Space_O(1) | 5 | 99.89
 
 #### Day 6 Breadth First Search Depth First Search
 
@@ -211,6 +212,7 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 1143 |[Longest Common Subsequence](src/main/js/g1101_1200/s1143_longest_common_subsequence/solution.js)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Big_O_Time_O(n\*m)_Space_O(n\*m) | 28 | 90.92
 
 #### Day 18 Dynamic Programming
 
@@ -517,6 +519,7 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 1143 |[Longest Common Subsequence](src/main/js/g1101_1200/s1143_longest_common_subsequence/solution.js)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Big_O_Time_O(n\*m)_Space_O(n\*m) | 28 | 90.92
 | 0072 |[Edit Distance](src/main/js/g0001_0100/s0072_edit_distance/solution.js)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Big_O_Time_O(n^2)_Space_O(n2) | 5 | 99.01
 
 #### Day 20
@@ -625,6 +628,7 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0739 |[Daily Temperatures](src/main/js/g0701_0800/s0739_daily_temperatures/solution.js)| Medium | Top_100_Liked_Questions, Array, Stack, Monotonic_Stack, Big_O_Time_O(n)_Space_O(n) | 9 | 99.89
 
 #### Day 7
 
@@ -657,6 +661,7 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0438 |[Find All Anagrams in a String](src/main/js/g0401_0500/s0438_find_all_anagrams_in_a_string/solution.js)| Medium | Top_100_Liked_Questions, String, Hash_Table, Sliding_Window, Big_O_Time_O(n+m)_Space_O(1) | 5 | 99.89
 
 #### Day 13
 
@@ -896,6 +901,7 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0438 |[Find All Anagrams in a String](src/main/js/g0401_0500/s0438_find_all_anagrams_in_a_string/solution.js)| Medium | Top_100_Liked_Questions, String, Hash_Table, Sliding_Window, Big_O_Time_O(n+m)_Space_O(1) | 5 | 99.89
 
 #### Day 13 Hashmap
 
@@ -954,6 +960,7 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0543 |[Diameter of Binary Tree](src/main/js/g0501_0600/s0543_diameter_of_binary_tree/solution.js)| Easy | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Big_O_Time_O(n)_Space_O(n) | 1 | 87.35
 | 0437 |[Path Sum III](src/main/js/g0401_0500/s0437_path_sum_iii/solution.js)| Medium | Depth_First_Search, Tree, Binary_Tree, Big_O_Time_O(n)_Space_O(n) | 2 | 97.05
 
 #### Day 8 Binary Search
@@ -1127,6 +1134,7 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 |-|-|-|-|-|-
 | 0094 |[Binary Tree Inorder Traversal](src/main/js/g0001_0100/s0094_binary_tree_inorder_traversal/solution.js)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Tree, Binary_Tree, Stack, Big_O_Time_O(n)_Space_O(n) | 0 | 100.00
 | 0102 |[Binary Tree Level Order Traversal](src/main/js/g0101_0200/s0102_binary_tree_level_order_traversal/solution.js)| Medium | Top_100_Liked_Questions, Top_Interview_Questions, Breadth_First_Search, Tree, Binary_Tree, Big_O_Time_O(N)_Space_O(N) | 1 | 87.97
+| 0543 |[Diameter of Binary Tree](src/main/js/g0501_0600/s0543_diameter_of_binary_tree/solution.js)| Easy | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Big_O_Time_O(n)_Space_O(n) | 1 | 87.35
 | 0226 |[Invert Binary Tree](src/main/js/g0201_0300/s0226_invert_binary_tree/solution.js)| Easy | Top_100_Liked_Questions, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Big_O_Time_O(n)_Space_O(n) | 0 | 100.00
 | 0104 |[Maximum Depth of Binary Tree](src/main/js/g0101_0200/s0104_maximum_depth_of_binary_tree/solution.js)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Depth_First_Search, Breadth_First_Search, Tree, Binary_Tree, Big_O_Time_O(N)_Space_O(H) | 0 | 100.00
 | 0124 |[Binary Tree Maximum Path Sum](src/main/js/g0101_0200/s0124_binary_tree_maximum_path_sum/solution.js)| Hard | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Depth_First_Search, Tree, Binary_Tree, Big_O_Time_O(N)_Space_O(N) | 1 | 98.34
@@ -1155,6 +1163,7 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 | 0070 |[Climbing Stairs](src/main/js/g0001_0100/s0070_climbing_stairs/solution.js)| Easy | Top_100_Liked_Questions, Top_Interview_Questions, Dynamic_Programming, Math, Memoization, Big_O_Time_O(n)_Space_O(n) | 0 | 100.00
 | 0064 |[Minimum Path Sum](src/main/js/g0001_0100/s0064_minimum_path_sum/solution.js)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Matrix, Big_O_Time_O(m\*n)_Space_O(m\*n) | 3 | 83.07
 | 0300 |[Longest Increasing Subsequence](src/main/js/g0201_0300/s0300_longest_increasing_subsequence/solution.js)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Binary_Search, Big_O_Time_O(n\*log_n)_Space_O(n) | 4 | 93.09
+| 1143 |[Longest Common Subsequence](src/main/js/g1101_1200/s1143_longest_common_subsequence/solution.js)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Big_O_Time_O(n\*m)_Space_O(n\*m) | 28 | 90.92
 | 0072 |[Edit Distance](src/main/js/g0001_0100/s0072_edit_distance/solution.js)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Big_O_Time_O(n^2)_Space_O(n2) | 5 | 99.01
 | 0010 |[Regular Expression Matching](src/main/js/g0001_0100/s0010_regular_expression_matching/solution.js)| Hard | Top_Interview_Questions, String, Dynamic_Programming, Recursion, Big_O_Time_O(m\*n)_Space_O(m\*n) | 4 | 95.52
 
@@ -1300,6 +1309,7 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
 | 0238 |[Product of Array Except Self](src/main/js/g0201_0300/s0238_product_of_array_except_self/solution.js)| Medium | Top_100_Liked_Questions, Array, Prefix_Sum, Big_O_Time_O(n^2)_Space_O(n) | 3 | 93.60
+| 0560 |[Subarray Sum Equals K](src/main/js/g0501_0600/s0560_subarray_sum_equals_k/solution.js)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Prefix_Sum, Big_O_Time_O(n)_Space_O(n) | 9 | 99.38
 
 #### Day 6 String
 
@@ -1310,6 +1320,7 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 
 | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- --> | <!-- -->
 |-|-|-|-|-|-
+| 0763 |[Partition Labels](src/main/js/g0701_0800/s0763_partition_labels/solution.js)| Medium | String, Hash_Table, Greedy, Two_Pointers, Big_O_Time_O(n)_Space_O(1) | 3 | 94.02
 
 #### Day 8 String
 
@@ -1398,6 +1409,14 @@ JavaScript-based LeetCode algorithm problem solutions, regularly updated.
 
 | #    |      Title     | Difficulty  | Tag         | Time, ms | Time, %
 |------|----------------|-------------|-------------|----------|---------
+| 1143 |[Longest Common Subsequence](src/main/js/g1101_1200/s1143_longest_common_subsequence/solution.js)| Medium | Top_100_Liked_Questions, String, Dynamic_Programming, Algorithm_II_Day_17_Dynamic_Programming, Dynamic_Programming_I_Day_19, Udemy_Dynamic_Programming, Big_O_Time_O(n\*m)_Space_O(n\*m) | 28 | 90.92
+| 0763 |[Partition Labels](src/main/js/g0701_0800/s0763_partition_labels/solution.js)| Medium | String, Hash_Table, Greedy, Two_Pointers, Data_Structure_II_Day_7_String, Big_O_Time_O(n)_Space_O(1) | 3 | 94.02
+| 0739 |[Daily Temperatures](src/main/js/g0701_0800/s0739_daily_temperatures/solution.js)| Medium | Top_100_Liked_Questions, Array, Stack, Monotonic_Stack, Programming_Skills_II_Day_6, Big_O_Time_O(n)_Space_O(n) | 9 | 99.89
+| 0647 |[Palindromic Substrings](src/main/js/g0601_0700/s0647_palindromic_substrings/solution.js)| Medium | String, Dynamic_Programming, Big_O_Time_O(n^2)_Space_O(n) | 3 | 99.10
+| 0560 |[Subarray Sum Equals K](src/main/js/g0501_0600/s0560_subarray_sum_equals_k/solution.js)| Medium | Top_100_Liked_Questions, Array, Hash_Table, Prefix_Sum, Data_Structure_II_Day_5_Array, Big_O_Time_O(n)_Space_O(n) | 9 | 99.38
+| 0543 |[Diameter of Binary Tree](src/main/js/g0501_0600/s0543_diameter_of_binary_tree/solution.js)| Easy | Top_100_Liked_Questions, Depth_First_Search, Tree, Binary_Tree, Level_2_Day_7_Tree, Udemy_Tree_Stack_Queue, Big_O_Time_O(n)_Space_O(n) | 1 | 87.35
+| 0494 |[Target Sum](src/main/js/g0401_0500/s0494_target_sum/solution.js)| Medium | Array, Dynamic_Programming, Backtracking, Big_O_Time_O(n\*(sum+s))_Space_O(n\*(sum+s)) | 2 | 99.66
+| 0438 |[Find All Anagrams in a String](src/main/js/g0401_0500/s0438_find_all_anagrams_in_a_string/solution.js)| Medium | Top_100_Liked_Questions, String, Hash_Table, Sliding_Window, Algorithm_II_Day_5_Sliding_Window, Programming_Skills_II_Day_12, Level_1_Day_12_Sliding_Window/Two_Pointer, Big_O_Time_O(n+m)_Space_O(1) | 5 | 99.89
 | 0437 |[Path Sum III](src/main/js/g0401_0500/s0437_path_sum_iii/solution.js)| Medium | Depth_First_Search, Tree, Binary_Tree, Level_2_Day_7_Tree, Big_O_Time_O(n)_Space_O(n) | 2 | 97.05
 | 0416 |[Partition Equal Subset Sum](src/main/js/g0401_0500/s0416_partition_equal_subset_sum/solution.js)| Medium | Top_100_Liked_Questions, Array, Dynamic_Programming, Level_2_Day_13_Dynamic_Programming, Big_O_Time_O(n\*sums)_Space_O(n\*sums) | 18 | 97.98
 | 0394 |[Decode String](src/main/js/g0301_0400/s0394_decode_string/solution.js)| Medium | Top_100_Liked_Questions, String, Stack, Recursion, Level_1_Day_14_Stack, Udemy_Strings, Big_O_Time_O(n)_Space_O(n) | 0 | 100.00
